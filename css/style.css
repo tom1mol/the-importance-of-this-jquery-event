@@ -18,9 +18,9 @@ p{
 	font-size: .9rem;
 }
 
-p.text{
+/*p.text{
 	background-color: red;
-}
+}*/
 
 div{
 	border-radius: 4px;
@@ -77,20 +77,24 @@ div{
 	padding: 20px;
 	background-color: #fff;
 }
-/* adds color red to <p> background when called by jquery function */
+
+/* adds color red to <p> background when called by jquery function 
 .highlight_text{
 	background-color: #EB5255;
 }
+*/
 
-/* adds color lightblue to h2 background when called by jquery function */
+/* adds color lightblue to h2 background when called by jquery function 
 .h2_color{
 	background-color: lightblue;
 }
+*/
 
-/* increases font size of h2 when called by jquery function...but only that particular h2 */
+/* increases font size of h2 when called by jquery function...but only that particular h2 
 .h2_font_size{
 	font-size: 2em;
 }
+*/
 
 #my_footer{
 	width:100%;
@@ -153,6 +157,16 @@ li{
   border: solid 5px #ccc;
 }
 
+
+/* the importance of this- jquery */
+
+.stream-nav {
+    cursor: pointer;
+}
+
+.card-highlight {
+    background-color: rgb(235, 82, 85);
+}
 
 @media screen and (max-width: 700px){
 	ul{

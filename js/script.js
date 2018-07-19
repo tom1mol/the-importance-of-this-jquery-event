@@ -1,23 +1,57 @@
-$(document).ready(function() {
+$(document).ready(function() {		// }); closing statement at bottom of page
  
+ //traversing up and down the DOM
+ //wait until page is ready
+ //$(document).ready(function(){				<--as on line 1
+
+	//sets <a> element within paragraph to yellow
+	$("p").click(function(){
+		$(this).children("a").css("background-color", "yellow"); //returns all 
+													//the <a> child elements 
+												  // that are within this paragraph
+	});
+
+	
  
+ // highlights paragraphs linked to stream1-3 red when streams are clicked
+ /*
+ $(".stream-nav").on("click", function(){
+     // a selector to match all cards in all streams
+     var allStreamsCardsSelector = ".card";
+     // a selector to match just this streams cards
+     //for this...we use the class with the name of the stream
+     //which is the same as the nav links id..and then the "-card" suffix
+     var thisStreamCardsSelector = "." + this.id + "-card";
+     
+     //first remove the highlight from all the cards
+     $(allStreamsCardsSelector).removeClass("card-highlight");
+     //then apply the highlight to just the streams cards
+     $(thisStreamCardsSelector).addClass("card-highlight");
+ });
+ */
 
  //applies red color to paragraphs when clicked on. linked to style.css .highlight_text and p.text
+ /*
 	$("p").click(function() {
 		$("p").addClass("highlight_text");
 });
+*/
 
 //add lightblue to h2 elements when hovered over. linked to style.css .h2_color
-
+/*
 $("h2").hover(function(){
 	$("h2").addClass("h2_color");
 	
 });
+*/
+
+
 
 /* this will apply larger font size to the active h2 element
 by adding the h2_font_size class but
 not the other h2 elements by removing class h2_font_size fcrom them
 put ID on h2 element in html*/
+/*
 
 $("#hr_html").hover(function(){
 	$("#hr_mysql").removeClass("h2_font_size");
@@ -54,6 +88,7 @@ $("#hr_jquery").hover(function(){
 	$("#hr_html").removeClass("h2_font_size");
 	$("#hr_jquery").addClass("h2_font_size");
 });
+
 $("#hr_django").hover(function(){
 	$("#hr_mysql").removeClass("h2_font_size");
 	$("#hr_python").removeClass("h2_font_size");
@@ -72,11 +107,15 @@ $("#hr_css").hover(function(){
 	$("#hr_css").addClass("h2_font_size");
 });
 
-/*
- // background color goes black when mouse goes over buttons
+*/
+
+
+ // background color goes black when mouse goes over buttons and grey when mouse leaves
+ /*
  $(".bottom_button").mouseenter(function(){
  	$("body").css("background-color", "black");
  });
+ 
  
  //background-color goes grey when mouse leaves button
  
@@ -86,8 +125,9 @@ $("#hr_css").hover(function(){
  
  */
  
- /*
+ 
 // disappears and reappears after 1000miliseconds      hide button   challenge1
+/*
  $("#button_effects1").click(function(){
  	$('#button_effects1').hide();
  	$('#button_effects1').show(1000);   //this part makes it reappear
@@ -96,6 +136,7 @@ $("#hr_css").hover(function(){
 */    
 
 // challenge2 jquery events hide <p> with click of button then display <p> with click of button
+/*
  $("#button_effects1").click(function(){
  	$("#par1").toggle();
  	
@@ -104,13 +145,19 @@ $("#hr_css").hover(function(){
  $("#button_effects2").click(function(){
  	$("#par2").toggle();
  });
+ 
+ */
         
 // challenge 3 use slideToggle to show/hide <p>
+/*
 $("#button_effects3").click(function(){
 	$("#par3").slideToggle();
 });
+*/
+
 
 //challenge4 use fadeTo with mouseenter/leave to modify button. fadeTo 50% mousenter 100% on mouseleave
+/*
 $("#button_effects4").mouseenter(function(){
 	$("#button_effects4").fadeTo(1000, 0.5);
 });
@@ -119,6 +166,7 @@ $("#button_effects4").mouseleave(function(){
 	$("#button_effects4").fadeTo(1000, 1);
 });
 
+*/
 
 /* disappears and reappears after 1000 miliseconds*/
 /*
@@ -127,9 +175,9 @@ $("#button_effects4").mouseleave(function(){
  	$('#button_effects1').toggle(1000);
         }); */
 
-/*
-//adds slideToggle to buttons to toggle paragraphs open and closed
 
+//adds slideToggle to buttons to toggle paragraphs open and closed
+/*
 $("#button_effects1").click(function(){
 	$("#par1").slideToggle('1000');	
 });
@@ -153,9 +201,10 @@ $("#button_effects5").click(function(){
 $("#button_effects6").click(function(){
 	$("#par6").slideToggle("1000");
 });
-
+*/
 
 //adds fade to when mouseEnter and mouseLeave
+/*
 
 $("#button_effects1").mouseenter(function(){
 	$("#button_effects1").fadeTo(1000, 0.5);  //1000miliseconds, 0.5 opacity
